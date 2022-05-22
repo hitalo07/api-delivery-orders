@@ -6,6 +6,7 @@
 * Express
 * ORM Prisma
 * Typescript
+* Docker (Docker compose)
 
 ## To get started, follow the steps:
 
@@ -32,6 +33,7 @@
 * Express
 * ORM Prisma
 * Typescript
+* * Docker (Docker compose)
 
 Para iniciar siga o passo a passo:
 
