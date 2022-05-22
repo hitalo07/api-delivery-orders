@@ -6,6 +6,6 @@
     "lib": [
       "esnext"
     ],
-    "esModuleinterop": true,
+    "esModuleInterop": true,
   }
 }
