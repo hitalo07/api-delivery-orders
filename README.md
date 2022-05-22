@@ -7,15 +7,19 @@
 * ORM Prisma
 * Typescript
 
-To get started, follow the steps:
+## To get started, follow the steps:
 
-#### Install dependencies: ```yarn```
+#### Install dependencies:
+```yarn```
 
-#### Initialize docker ```docker-compose up -d```
+#### Initialize docker
+```docker-compose up -d```
 
-#### Run prism migrations: ```yarn prism generate dev```
+#### Run prism migrations:
+```yarn prism generate dev```
 
-#### Run the project ```yarn dev```
+#### Run the project
+```yarn dev```
 
 # Português
 
@@ -32,13 +36,13 @@ To get started, follow the steps:
 Para iniciar siga o passo a passo:
 
 #### Instalar as dependencias
-``yarn``
+```yarn```
 
 #### Inicializar o docker
-docker-compose up -d
+```docker-compose up -d```
 
 #### Rodar as migrações do prisma:
-yarn prisma generate dev
+```yarn prisma generate dev```
 
 #### Rodar o projeto
-yarn dev
+```yarn dev```
