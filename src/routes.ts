@@ -4,6 +4,7 @@ import { ensureAuthenticateDeliveryman } from "./middlewares/ensureAuthenticateD
 import { AuthenticateClientController } from "./modules/account/useCases/authenticateClient/AuthenticateClientController";
 import { AuthenticateDeliverymanController } from "./modules/account/useCases/authenticateDeliveryman/AuthenticateDeliverymanController";
 import { CreateClientController } from "./modules/clients/useCases/createClient/CreateClientController";
+import { FindAllDeliveriesController } from "./modules/clients/useCases/deliveries/FindAllDeliveriesController";
 import { CreateDeliveryController } from "./modules/deliveries/useCases/createDelivery/CreateDeliveryCOntroller";
 import { FindAllAvailableController } from "./modules/deliveries/useCases/findAllAvailable/FindAllAvailableController";
 import { UpdateDeliverymanController } from "./modules/deliveries/useCases/updateDeliveryman/UpdateDeliverymanController";
@@ -18,13 +19,15 @@ const authenticateDeliverymanController = new AuthenticateDeliverymanController(
 const createDeliveryController = new CreateDeliveryController()
 const findAllAvailableUseCase = new FindAllAvailableController()
 const updateDeliverymanController = new UpdateDeliverymanController()
+const findAllDeliveriesController = new FindAllDeliveriesController()
 
-routes.post('/client/authenticate', authenticateClientController.handle)
+routes.post('/clients/authenticate', authenticateClientController.handle)
 routes.post('/deliveryman/authenticate', authenticateDeliverymanController.handle)
 routes.post('/clients', createClientController.handle)
 routes.post('/deliveryman', createDeliverymanController.handle)
 routes.post('/delivery', ensureAuthenticateClient, createDeliveryController.handle)
 routes.get('/delivery/available', ensureAuthenticateDeliveryman, findAllAvailableUseCase.handle)
 routes.patch('/delivery/updateDeliveryman/:id', ensureAuthenticateDeliveryman,updateDeliverymanController.handle)
+routes.get('/clients/deliveries', ensureAuthenticateClient, findAllDeliveriesController.handle)
 
 export { routes }
