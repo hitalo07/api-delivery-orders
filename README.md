@@ -9,13 +9,13 @@
 
 To get started, follow the steps:
 
-#### * Install dependencies: ```yarn```
+* Install dependencies: ```yarn```
 
-#### * Initialize docker ```docker-compose up -d```
+* Initialize docker ```docker-compose up -d```
 
-#### * Run prism migrations: ```yarn prism generate dev```
+###### * Run prism migrations: ```yarn prism generate dev```
 
-#### * Run the project ```yarn dev```
+###### * Run the project ```yarn dev```
 
 
 
