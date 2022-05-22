@@ -10,16 +10,16 @@
 To get started, follow the steps:
 
 #### Install dependencies
-yarn
+```yarn```
 
 #### Initialize docker
-docker-compose up -d
+```docker-compose up -d```
 
 #### Run prism migrations:
-yarn prism generate dev
+```yarn prism generate dev```
 
 #### Run the project
-yarn dev
+```yarn dev```
 
 
 
