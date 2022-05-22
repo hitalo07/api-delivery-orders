@@ -32,7 +32,7 @@ To get started, follow the steps:
 Para iniciar siga o passo a passo:
 
 #### Instalar as dependencias
-yarn
+``yarn``
 
 #### Inicializar o docker
 docker-compose up -d
