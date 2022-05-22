@@ -13,6 +13,5 @@ export class AuthenticateClientController {
     })
 
     return response.json(result)
-
   }
 }
