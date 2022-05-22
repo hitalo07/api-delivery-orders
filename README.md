@@ -1,5 +1,5 @@
-# Api delivery orders
-## In this application we have a simple order delivery API.
+## Api delivery orders
+### In this application we have a simple order delivery API.
 
 ### Technologies were used:
 
@@ -26,9 +26,9 @@ yarn dev
 
 # Português
 
-# API de entrega de pedidos
+## API de entrega de pedidos
 
-## Neste aplicativo temos uma API simples de entrega de pedidos.
+### Neste aplicativo temos uma API simples de entrega de pedidos.
 
 ### Tecnologias usadas:
 
